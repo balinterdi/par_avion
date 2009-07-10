@@ -1,0 +1,16 @@
+<h1>Editing airport</h1>
+
+<% form_for(@airport) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @airport %> |
+<%= link_to 'Back', airports_path %>
